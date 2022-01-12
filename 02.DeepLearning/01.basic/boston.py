@@ -17,11 +17,13 @@ from sklearn.metrics import r2_score, mean_squared_error
 
 # 상수값 설정 등 변수 초기화
 seed = 2022
+warning.filterwarning
 np.random.seed(2022)
 tf.random.set_seed(seed)
 boston = load_boston()
+
 X_train, X_test, y_train, y_test = train_test_split(
-    boston.data, boston.target, test_size= 0.1, random_state= seed
+    boston.data0, boston.target, test_size= 0.1, random_state= seed
 )
 
 # 메인 모델 만들기
